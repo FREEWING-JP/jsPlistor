@@ -48,7 +48,7 @@ function makeDataRow(type, opts){
 	switch(type) {
 		case "string": {
 			row.addClass("data-string");
-			row.find(".typename").html("String");
+			row.find(".typename").html("(Str)");
 			var inputField = $("<input type='text'>");
 			content.append(inputField).before(
 				$("<button type='button'>").addClass("editbtn").button({label: "Edit..."}).click(function(e){
@@ -70,7 +70,7 @@ function makeDataRow(type, opts){
 		}
 		case "number": {
 			row.addClass("data-number");
-			row.find(".typename").html("Number");
+			row.find(".typename").html("(Num)");
 			content.append(
 				$("<input type='text'>")
 					//.spinner({numberFormat: "n"}).spinner("widget")
@@ -80,7 +80,7 @@ function makeDataRow(type, opts){
 		}
 		case "boolean": {
 			row.addClass("data-boolean");
-			row.find(".typename").html("Boolean");
+			row.find(".typename").html("(Bool)");
 			content.append(
 				$("<input type='checkbox'>")
 					.prop("checked",(prefill)?(!!prefill.value):false)
@@ -89,7 +89,7 @@ function makeDataRow(type, opts){
 		}
 		case "date": {
 			row.addClass("data-date");
-			row.find(".typename").html("Date");
+			row.find(".typename").html("(Date)");
 			content.append(
 				$("<input type='text'>")
 					.datepicker({dateFormat:"yy-mm-dd", showAnim:"slideDown"})
@@ -99,7 +99,7 @@ function makeDataRow(type, opts){
 		}
 		case "data": {
 			row.addClass("data-data");
-			row.find(".typename").html("Data");
+			row.find(".typename").html("(Data)");
 			var inputField = $("<div>").addClass("datafield");
 			content.append(inputField).before(
 				$("<button type='button'>").addClass("editbtn").button({label: "Edit..."}).click(function(e){
@@ -131,14 +131,14 @@ function makeDataRow(type, opts){
 		}
 		case "array": {
 			row.addClass("data-array");
-			row.find(".typename").html("Array");
+			row.find(".typename").html("(Arr)");
 			sub = $("<ol>").append(makeAddRow()).attr("id", "ol"+(++uniqueId));
 			break;
 		}
 		case "dict":
 		case "dictionary": {
 			row.addClass("data-dict");
-			row.find(".typename").html("Dictionary");
+			row.find(".typename").html("(Dict)");
 			sub = $("<ul>").append(makeAddRow()).attr("id", "ul"+(++uniqueId));
 			break;
 		}
