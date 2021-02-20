@@ -334,7 +334,8 @@ function getRowData(row) {
 function toXML(){
 	//converts all the data here into saveable XML
 	var str = '<?xml version="1.0" encoding="UTF-8"?>\n';
-	str += '<\!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">\n';
+	//str += '<\!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">\n';
+	str += '<\!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n';
 	str += '<plist version="1.0">\n';
 	str += '<dict>\n';
 	
