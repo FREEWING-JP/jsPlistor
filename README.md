@@ -18,6 +18,8 @@ Tustin2121
 
 # mod version
 
+ORG  
 ![ORG](https://raw.githubusercontent.com/FREEWING-JP/jsPlistor/gh-pages/png/org.png "ORG")  
 
+MOD  
 ![MOD](https://raw.githubusercontent.com/FREEWING-JP/jsPlistor/gh-pages/png/mod.png "MOD")  
