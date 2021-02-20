@@ -15,3 +15,9 @@ Feel free to examine, contribute, and submit bugs at the github repo: https://gi
 answered Aug 6 '13 at 21:47
 Tustin2121
 ```
+
+# mod version
+
+![ORG](https://raw.githubusercontent.com/FREEWING-JP/jsPlistor/gh-pages/png/org.png "ORG")  
+
+![MOD](https://raw.githubusercontent.com/FREEWING-JP/jsPlistor/gh-pages/png/mod.png "MOD")  
