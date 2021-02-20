@@ -401,7 +401,7 @@ function toXML(){
 			} break;
 			case row.is(".data-data"): {
 				str += "<data>";
-				str += row.find(".content .datafield").text();
+				str += row.find(".content .datafield").text().trim();
 				str += "</data>\n";
 			} break;
 			case row.is(".data-array"): {
