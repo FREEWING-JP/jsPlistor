@@ -87,7 +87,7 @@ li {
 .row {
 	border: 1px #818181 solid;
 	border-radius: 5px;
-	padding: 4px;
+	padding: 1px 4px 0px;
 	margin-top: -1px;
 }
 .sort-placeholder {
@@ -100,10 +100,12 @@ li {
 /* Inner Row Elements: Type Name, and Array Index */
 .row .typename, 
 .row .arrayIdx {
+	color: #888888;
+	font-size: 12px;
 	display: inline-block;
 	float: left;
-	width: 65px;
-	padding: 4px 6px;
+	width: 45px;
+	padding: 1px 6px;
 	text-align: right;
 }
 .row .typename:after { content: ":"; }
@@ -119,14 +121,23 @@ ol > li > .row .arrayIdx { display: inline-block; }
 /* Inner Row Element: Content Area */
 .row .content {
 	overflow: hidden;
+	}
+.row input {
+	width: 100%;
+	font-size: 14px;
+	min-height: 22px;
+	border: 1px solid #CCCCCC;
+	padding: 1px 1px 0px;
+	margin: 0px 0;
+	background-color: white;
 }
 .row .content input {
 	width: 100%;
 	font-size: 14px;
 	min-height: 22px;
-	border: 1px solid #666666;
-	padding: 1px;
-	margin: 2px 0;
+	border: 1px solid #CCCCCC;
+	padding: 1px 1px 0px;
+	margin: 0px 0;
 	background-color: white;
 }
 .data-boolean .content input {
@@ -137,8 +148,8 @@ ol > li > .row .arrayIdx { display: inline-block; }
 .row .datafield {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	padding: 4px 0;
-	color: #AAAAAA;
+	padding: 1px 0 0px;
+	color: #444444;
 	font-family: monospaced;
 }
 
@@ -151,7 +162,7 @@ ol > li > .row .arrayIdx { display: inline-block; }
 /* Inner Row Element: Key Field */
 .row .key {
 	display: none;
-	width: 100px;
+	width: 160px;
 }
 ul > li > .row .key {
 	display: inline-block;
@@ -179,7 +190,7 @@ ul > li > .row .key {
 }
 .row .ui-button-text {
 	/*padding:.2em .8em;*/
-	padding:2px 8px;
+	padding: 1px 6px;
 }
 
 .dlog {
@@ -196,6 +207,8 @@ ul > li > .row .key {
 }
 .theme-alter div.addrow {
 	background-color: #FFFBF5 !important;
+	color: #888888;
+	font-size: 12px;
 }
 .theme-alter div.delrow {
 	background-color: #FFA6A6 !important;

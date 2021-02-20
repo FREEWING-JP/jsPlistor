@@ -192,7 +192,7 @@ function makeDataRow(type, opts){
 function makeDeleteRow(){
 	var li = $("<li>").addClass("delrow").hide();
 	var row = $("<div>").addClass("row delrow").append(
-		$("<div>").css({float: "left", margin: "5px"}).html("Row Deleted.")
+		$("<div>").css({float: "left", margin: "0px"}).html("Row Deleted.")
 	).appendTo(li);
 	var bs = $("<div>").addClass("content").css({"text-align":"center"});
 	
@@ -219,7 +219,7 @@ function makeDeleteRow(){
 function makeAddRow(){
 	var li = $("<li>").addClass("addrow");
 	var row = $("<div>").addClass("row addrow").append(
-		$("<div>").css({float: "left", margin: "5px"}).html("Add Row of Type: ")
+		$("<div>").css({float: "left", margin: "0px"}).html("Add Row of Type: ")
 	).appendTo(li);
 	var bs = $("<div>").addClass("content");
 	
